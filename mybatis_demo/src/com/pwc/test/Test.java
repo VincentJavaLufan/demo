@@ -38,6 +38,7 @@ public class Test {
 		List<User> list = mapper.findByAge(234);
 		String str = list.toString();
 		System.out.println(str);
+		session.commit();
 		session.close();
 	}
 }
