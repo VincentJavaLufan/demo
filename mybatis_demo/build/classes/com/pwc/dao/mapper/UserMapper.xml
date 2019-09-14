@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.pwc.dao.mapper.UserMapper">
+    
+    <select id="findByAge" parameterType="int" resultType="com.pwc.pojo.User">
+        SELECT * FROM user WHERE age=#{age}
+    </select>
+    
     <select id="findById" parameterType="int" resultType="com.pwc.pojo.User">
         SELECT * FROM user WHERE id = #{id}
     </select>
@@ -14,7 +19,4 @@
  
     </delete>
  
-    <select id="findByAge" parameterType="int" resultType="com.pwc.pojo.User">
-        SELECT * FROM user WHERE age=#{age}
-    </select>
 </mapper>
