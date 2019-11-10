@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="com.wnn.mapper.T_MALL_CLASS_1_mapper">
+
+	<select id="getList" resultType="com.wnn.bean.T_MALL_CLASS_1">
+		select * from t_mall_class_1;
+	</select>
+
+	<insert id="insert" parameterType="com.wnn.bean.T_MALL_CLASS_1"
+		useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+		insert into t_mall_class_1 (flmch1) values (#{flmch1})
+	</insert>
+	
+
+</mapper>
