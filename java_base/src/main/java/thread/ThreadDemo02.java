@@ -20,7 +20,6 @@ public class ThreadDemo02 extends Thread{
 		t1.setName("1111");
 		t2.setName("2222");
 		t1.start();
-//			t1.sleep(111);
 		t2.start();
 		
 		
