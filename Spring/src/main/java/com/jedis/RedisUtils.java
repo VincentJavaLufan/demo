@@ -14,7 +14,7 @@ public class RedisUtils {
 			config.setMaxIdle(2);
 			config.setTestOnBorrow(true); // 设置检查项为true，避免null的情况。
 			
-			pool = new JedisPool(config, host, port ,6000 ,"111111");
+			pool = new JedisPool(config, host, port , 6000, "111111");
 			
 		}
 		return pool;
