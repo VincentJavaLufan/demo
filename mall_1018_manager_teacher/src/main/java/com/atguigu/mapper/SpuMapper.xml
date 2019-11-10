@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.atguigu.mapper.SpuMapper">
+
+	<select id="select_spu_list" parameterType="Map" resultType="com.atguigu.bean.T_MALL_PRODUCT">
+		select * from t_mall_product where pp_id = #{pp_id}
+	</select>
+
+	<insert id="insert_images" parameterType="Map">
+		insert into t_mall_product_image(shp_id,url) 
+		values
+		<foreach collection="list_image" item="image" separator=",">
+			(#{shp_id},#{image})
+		</foreach>
+	</insert>
+
+	<insert id="insert_spu" useGeneratedKeys="true" keyColumn="id" keyProperty="id" parameterType="com.atguigu.bean.T_MALL_PRODUCT">
+		insert into t_mall_product (
+			shp_mch,
+			shp_tp,
+			flbh1,
+			flbh2,
+			pp_id,
+			shp_msh
+		) values (
+			#{shp_mch},
+			#{shp_tp},
+			#{flbh1},
+			#{flbh2},
+			#{pp_id},
+			#{shp_msh}
+		)
+	</insert>
+</mapper>
