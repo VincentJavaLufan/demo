@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>合成事件</title>
+<style>
+	.big{
+		width:250px;
+		height:250px;
+	}
+</style>
+<script src="../js/jquery-3.2.1.js"></script>
+<script>
+	$(function(){
+		//函数内直接写this，代表触发此函数的节点。
+		$("img").hover(  //hover(mouseenter, mouseleave)  模拟光标悬停事件
+			function(){
+				//两种方法都是改style 改内联样式
+				//方法1 $(this).width("250px").height("250px")  
+				//方法2 $(this).css("width","250px").css("height","250px");
+				$(this).addClass("big");
+			},//悬停时调用		
+			function(){
+				//方法1 $(this).width("218px").height("218px")
+				//方法2 $(this).css("width","218px").css("height","218px");
+				$(this).removeClass("big");
+			} //离开时调用
+		);
+		
+		$("input:button").click(function(){//input可以省略
+			//对图片触发切换事件,使其在显示与隐藏之间切换。
+			$("img").toggle();
+		});
+		
+		//模拟按钮的单击事件
+		$(":button").trigger("click");
+	});
+</script>
+</head>
+<body>
+	<input type="button" value="切换">
+	<p>
+		<img src="1.jpg"/>
+		<img src="2.jpg"/>
+		<img src="3.jpg"/>
+	</p>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>动画</title>
+<style>
+	/*自定义动画基于定位（相对，绝对，固定），采用定时器不断地改变偏移量就形成了动画*/
+	<!-- 绝对定位absolute，浮动定位fixed --!>
+	img{
+		position:relative;
+	}
+	div{
+		width:200px;
+		height:100px;
+		border:3px solid red;
+		position:fixed; 
+		top:100px;
+		right:-180px;
+	}
+</style>
+<script src="../js/jquery-3.2.1.js"></script>
+<script>
+	function f1(){
+		$("img").show(300,function(){
+			alert("*****")
+		});
+	}
+	function f2(){
+		$("img").hide(300,function(){
+			alert("------")
+		});
+	}
+	function f3(){
+		$("img").slideDown(400,function(){
+		});
+	}
+	function f4(){
+		$("img").slideUp(400,function(){
+		});
+	}
+	function f5(){
+		$("img").fadeIn(2000,function(){
+		});
+	}
+	function f6(){
+		$("img").fadeOut(2000,function(){
+		});
+	}
+	function f7(){
+		$("p:last").fadeIn(500).fadeOut(3000);
+	}
+	function f8(){
+		$("img").animate({"left":"300px"},100)
+				.animate({"top":"300px"},100)
+				.animate({"left":"300px"},100)
+				.animate({"top":"3000px"},100)
+	}
+	
+	$(function(){
+		$("div").hover(
+			function(){
+				$(this).animate({"right":"10"},500)
+			},		
+			function(){
+				$(this).animate({"right":"-150"},500)
+			}		
+		);
+	});
+</script>
+</head>
+<body>
+	<P>
+		<input type="button" value="显示" onclick="f1();"/>
+		<input type="button" value="隐藏" onclick="f2();"/>
+		<input type="button" value="下滑" onclick="f3();"/>
+		<input type="button" value="上滑" onclick="f4();"/>
+		<input type="button" value="淡入" onclick="f5();"/>
+		<input type="button" value="淡出" onclick="f6();"/>
+		<input type="button" value="删除" onclick="f7();"/>
+		<input type="button" value="走你" onclick="f8();"/>
+	</P>
+	<p>
+		<img src="1.jpg"/>
+	</p>
+	<p style="display:none;"><b>操作成功</b></p>
+	<div>
+		客服11424228<br>客服11424228<br>客服11424228<br>客服11424228<br>
+	</div>
+</body>
+</html>
