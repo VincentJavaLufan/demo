@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新闻图片</title>
+<style>
+	div{
+		width:800px;
+		height:1000px;
+		border:1px solid #f00;
+		/*增加position的目的是便于子元素以它为目标设置绝对定位*/
+	position:relative;
+	}
+	/*绝对定位*/
+	p{
+		position:absolute;
+		bottom:300px;
+		left:100px;
+		width:400px;
+		background-color:#f00;
+		line-height:100px;
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<img src="7.jpg"/>
+		<p>我爱画画，我爱画画，我爱画画。</p>
+	</div>
+</body>
+</html>

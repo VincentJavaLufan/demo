@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>照片墙 </title>
+<style>
+	body{
+		background-color:#aaa;
+	}
+	li{
+		width:218px;
+		padding:10px;
+		margin:10px;
+		border:1px solid #fff;
+	}
+	ul{
+		width:780px;
+		border:1px solid red;
+		margin:30px auto;
+		/*去掉列表前的符号*/
+		list-style-type:none;"
+	}
+	li{
+		float:left;
+		background-color:#bbb;
+	}
+	p{
+		text-align:center;
+	}
+	ul{
+		border:0;
+	}
+	/*做鼠标悬停时，照片抖动的效果*/
+	/*使用相对定位，让图片产生微小的*/
+	li:hover{
+		position:relative;
+		left:50px;
+		/*right:-5px;=left:5px*/
+		bottom:50px;
+		/*bottom:5px=top:-5px;*/
+	}
+</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<img src="1.jpg"/>
+			<p>啊，teacher仓！</p>
+		</li>
+		<li>
+			<img src="2.jpg"/>
+			<p>你在何方？</p>
+		</li>
+		<li>
+			<img src="3.jpg"/>
+			<p>难道去了东阳？</p>
+		</li>
+		<li>
+			<img src="4.jpg"/>
+			<p>那边的痴汉很多很多</p>
+		</li>
+		<li>
+			<img src="5.jpg"/>
+			<p>你千万要穿好衣服，</p>
+		</li>
+		<li>
+			<img src="6.jpg"/>
+			<p>别走光了！</p>
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js的使用方式</title>
+//js弱类型语音，
+<!-- 2.嵌入式：在script内写js。
+script标签可以写在页面任意位置，但通常更习惯写在head里。 -->
+<script>
+	/*JS注释可以这样*/
+	//js注释可以这样
+	//js的函数都是共有的，不要修饰；语法要求没有Java严格。
+	//js函数可以呀返回值，但不需要声明；
+	//js的函数可以有参数：
+	function f2(){
+		//js不区分单引号和双引号
+		alert('范传奇');
+	}
+</script>
+
+<!-- 3.文件调用式：在独立的js文件中写js.
+		script要么用来引入js文件，要么直接写js -->
+<script src="x.js"></script>
+
+</head>
+<body>
+
+	<!-- 事件：js被调用的时机
+		   举例：单击事件，双击事件。 -->
+		   
+	<!-- 1.事件定义式：在元素上定义事件时直接写js -->
+	<input type="button" value="按钮1" 
+		onclick="alert('苍老师');"/>
+	<input type="button" value="按钮2" onclick="f2();"/>
+	<input type="button" value="按钮3" onclick="f3();"/>
+</body>
+</html>

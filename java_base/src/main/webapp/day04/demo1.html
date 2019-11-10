@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>浮动</title>
+<style>
+	#d0,p{
+		width:400px;
+		border:5px solid #000;
+	}
+	#d0 div{
+		width:100px;
+		height:100px;
+		margin:10px;
+	}
+	#d1 {
+		background-color:red;
+	}
+	#d2 {
+		background-color:green;
+	}
+	#d3 {
+		background-color:blue;
+	}
+	/*.浮动*/
+	#d1,#d2,#d3{
+		float: left;
+	}
+	/*2.1消除浮动影响（对叔叔的）*/
+	.clear-left{
+		clear: left;
+	}
+</style>
+</head>
+
+<body>
+	<div id="d0">
+		<div id="d1"></div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+		<div style="height:0;" class="clear-left"></div>
+	</div>
+	<!-- 消除对p的影响 -->
+	<p class="clear-left">浮动时观察我的位置</p>
+</body>
+</html>
