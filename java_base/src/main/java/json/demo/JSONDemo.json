@@ -1,0 +1,14 @@
+{
+    "birthday": "1990-01-01",
+    "major": [
+        "理发",
+        "asdf"
+    ],
+    "school": "蓝翔",
+    "car": null,
+    "name": "王小二",
+    "has_girlfriend": false,
+    "comment": "这是一个注释asdf",
+    "house": null,
+    "age": 25.2
+}

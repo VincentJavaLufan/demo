@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/json-lib-2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="lib/json.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-3.11.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-examples-3.11.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-excelant-3.11.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-ooxml-3.11.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-ooxml-schemas-3.11.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-scratchpad-3.11.jar"/>
+	<classpathentry kind="lib" path="E:/jars/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="E:/jars/jdom.jar"/>
+	<classpathentry kind="lib" path="E:/jars/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="E:/jars/jxl.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc7-7.0.jar"/>
+	<classpathentry kind="lib" path="lib/zxing3.2.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

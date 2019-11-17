@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>平方</title>
+<script>
+	function pf(){
+		var ii = document.getElementById("num").value
+		var ss = document.getElementById("result")
+		if(isNaN(ii)){
+			ss.innerHTML="请输入数字"
+		}else{
+			ss.innerHTML= ii*ii
+		}
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="num"/>
+	<input type="button" value="平方" onclick="pf()"/>
+	=<span id="result"></span>
+</body>
+</html>

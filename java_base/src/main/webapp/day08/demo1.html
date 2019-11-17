@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图片轮播</title>
+<style>
+	div{
+		border:13px solid #f00;
+		width:218px;
+		height:218px;
+	}
+	.show{
+		display:inline-block;
+	}
+	.hide{
+		display:none;
+	}
+</style>
+</head>
+<body>
+	<!-- onmouseover是鼠标悬停时间
+		 onmouseout是鼠标离开事件 -->
+	<div onmouseover = "pause()" onmouseout="lunbo()">
+		<img src="1.jpg" class="show"/>
+		<img src="2.jpg" class="hide"/>
+		<img src="3.jpg" class="hide"/>
+		<img src="4.jpg" class="hide"/>
+		<img src="5.jpg" class="hide"/>
+		<img src="6.jpg" class="hide"/>
+	</div>
+	<script>
+	var id = null
+	var index = 0
+		function lunbo(){
+			id = setInterval(function(){//interval设置时间间隔
+				index++  //index=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+				//获取所有的图片。得到的是数组img
+				var imgs = document.getElementsByTagName("img")
+				//隐藏所有的图片
+				for(var i=0; i<imgs.length;i++){
+					imgs[i].className = "hide"
+					//通过遍历，逐个隐藏。通过  .class 改属性。
+				}
+				//显示下一张图片
+				var next = index%imgs.length  //  n/6的余数
+				imgs[next].className = "show"
+			},500)
+		}
+		function pause(){
+			clearInterval(id)
+		}
+		lunbo()
+	</script>
+</body>
+</html>

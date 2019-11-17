@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录框</title>
+<style>
+	.error{
+		color:red;
+		border:1px solid red;
+	}
+	.ok{
+		color:green;
+		border:1px solid green;
+	}
+</style>
+<script>
+	//验证账号格式  body是前端部分，界面。  script里面的是后端逻辑。
+	function checkCode(){
+		//获取账号
+		var code = document.getElementById("code").value
+		//判断账号格式
+		var span = document.getElementById("codeMsg")
+		var reg = /^\w{5,10}$/   //完整匹配
+		if(reg.test(code)){//test方法：判断字符串中是否包含与  正则相匹配的部分
+			//验证通过，设置span样式为  ok
+			span.className = "ok"
+			return true
+		}else{
+			//验证失败，设置span样式为error
+			span.className = "error"
+			return false
+		}
+	}
+	//验证密码格式
+	function checkPwd(){
+		//获取密码
+		var pwd = document.getElementById("pwd").value
+		//判断密码格式
+		var span = document.getElementById("pwdMsg")
+		var reg = /^\w{8,20}$/
+		if(reg.test(pwd)){
+			//验证通过，设置span样式为  ok
+			span.className = "ok"
+			return true
+		}else{
+			//验证失败，设置span样式为error
+			span.className = "error"
+			return false
+		}
+	}
+</script>
+</head>
+<body>   
+	<form action="http://www.baidu.com" onsubmit="return checkCode() + checkPwd()==2"> 
+	<!-- onsubmit可以防止没有任何输入的时候也可以转到登陆连接
+		onsubmit触发提交 return true可以提交 return false就不能提交了
+		需要checkCode 和 checkPwd都提交返回值1+1=2-->
+		<p>
+			账号：<input type="text" id="code" onblur="checkCode()"/> <!-- 光标离开，即开始验证。 -->
+			<span id="codeMsg">5-10位字母，数字，下划线</span>
+		</p>
+		<p>
+			密码：<input type="password" id="pwd" onblur="checkPwd()"/>
+			<span id="pwdMsg">8-20位字母，数字，下划线</span>
+		</p>
+		<p>
+			<input type="submit" value="登陆"/>
+		</p>
+	</form>
+</body>
+</html>

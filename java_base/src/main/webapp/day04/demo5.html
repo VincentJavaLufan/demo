@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>照片堆</title>
+<style>
+	div{
+		width:800px;
+		heigth:800px;
+		background-color:#f00;
+		margin:3px auto;
+		
+	}
+	#i1{
+		position:relative;
+		left:350px;
+		top:100px;
+	}
+	#i2{
+		position:relative;
+		left:40px;
+		top:50px;
+	}
+	#i3{
+		position:relative;
+		left:-20px;
+		top:20px;
+	}
+	img:hover{
+		/*堆叠顺序；值越大越靠上*/
+		z-index:999;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<img src="1.jpg" id="i1"/>
+		<img src="2.jpg" id="i2">
+		<img src="3.jpg" id="i3">
+	</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+2019-09-15 12:19:48,166 [main] INFO  [com.open1111.Test] -普通info信息11
+2019-09-15 12:19:48,167 [main] DEBUG [com.open1111.Test] -调试debug信息11
+2019-09-15 12:19:48,167 [main] ERROR [com.open1111.Test] -错误error信息11
+2019-09-15 12:19:48,168 [main] WARN  [com.open1111.Test] -警告warn信息11
+2019-09-15 12:19:48,168 [main] FATAL [com.open1111.Test] -严重错误fatal信息
+2019-09-15 12:19:48,169 [main] ERROR [com.open1111.Test] -错误error信息
+java.lang.IllegalArgumentException: 非法参数
+	at com.open1111.Test.main(Test.java:17)
+2019-09-15 12:21:06,137 [main] INFO  [com.open1111.Test] -普通info信息11
+2019-09-15 12:21:06,138 [main] DEBUG [com.open1111.Test] -调试debug信息11
+2019-09-15 12:21:06,138 [main] ERROR [com.open1111.Test] -错误error信息11
+2019-09-15 12:21:06,139 [main] WARN  [com.open1111.Test] -警告warn信息11
+2019-09-15 12:21:06,139 [main] FATAL [com.open1111.Test] -严重错误fatal信息
+2019-09-15 12:21:06,140 [main] ERROR [com.open1111.Test] -错误error信息
+java.lang.IllegalArgumentException: 非法参数
+	at com.open1111.Test.main(Test.java:17)
+2019-09-15 12:21:08,653 [main] INFO  [com.open1111.Test] -普通info信息11
+2019-09-15 12:21:08,653 [main] DEBUG [com.open1111.Test] -调试debug信息11
+2019-09-15 12:21:08,654 [main] ERROR [com.open1111.Test] -错误error信息11
+2019-09-15 12:21:08,654 [main] WARN  [com.open1111.Test] -警告warn信息11
+2019-09-15 12:21:08,654 [main] FATAL [com.open1111.Test] -严重错误fatal信息
+2019-09-15 12:21:08,655 [main] ERROR [com.open1111.Test] -错误error信息
+java.lang.IllegalArgumentException: 非法参数
+	at com.open1111.Test.main(Test.java:17)

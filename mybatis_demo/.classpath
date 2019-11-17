@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mybatis-3.3.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.9.jar"/>
+	<classpathentry kind="lib" path="E:/apache-maven-3.5.0/repository/asm/asm/3.1/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="E:/apache-maven-3.5.0/repository/cglib/cglib/2.2/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="E:/apache-maven-3.5.0/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/apache-maven-3.5.0/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar"/>
+	<classpathentry kind="lib" path="E:/jars/log4j-1.2-api-2.0-beta5-sources.jar"/>
+	<classpathentry kind="lib" path="E:/jars/log4j-core-2.0-beta8.jar"/>
+	<classpathentry kind="lib" path="E:/jars/mybatis-3.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/jars/mysql-connector-java-5.1.9.jar"/>
+	<classpathentry kind="lib" path="E:/jars/slf4j-api-1.7.12.jar"/>
+	<classpathentry kind="lib" path="E:/jars/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

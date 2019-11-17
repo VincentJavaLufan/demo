@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>内置对象</title>
+<script>
+	//1.String
+	var s = "javaScript是很像java的"
+	console.log(s.charAt(4))
+	console.log(s.charCodeAt(4))
+	console.log(s.indexOf("java"))
+	console.log(s.lastIndexOf("java"))
+	console.log(s.substring(4,10))
+	//string的api无法改变原始的string
+	//而是生成一个新的string并返回。
+	console.log(s)
+	console.log(s.replace("java","ECMA"))
+	console.log(s.split(""))
+	
+	//2.Number
+	var n = 3.1415926
+	console.log(n.toFixed(3))
+	
+	//3.array(js里面的数组都是object数组)
+	//若已知数据
+	var a1 = [3,"zhangshan",true];
+	console.log(a1[1]);
+	//若未知数据
+	var a2 = new Array();//创建一个空的数组
+	a2.push(4)
+	a2.push("lisi")
+	a2.push(false)
+	console.log(a2[1])
+	//注意：无论我们采用何种方式创建的数组，本质上都一样，都是object数组。
+	//二维数组：每个元素都是数组的数组。
+	var a3=[
+		["济南","青岛"],
+		["石家庄","保定"]
+	]
+	console.log(a3[1][1])
+	
+	//数组的倒转
+	var arr = [5,8,12,6,3,3,54,23,15,11];
+	arr.reverse();//在js里面数组的方法直接改变原数组。
+	//string则新建一个改变后的string
+	console.log(arr)
+	
+	//数组的排序（默认按照字符串比较 ，  无论……本质上都是object数组。
+	//[11, 12, 15, 23, 3, 3, 5, 54, 6, 8]
+	arr.sort();
+	console.log(arr)
+	//替换比较函数，从而影响排序结果。
+	arr.sort(function (a,b){return b-a})//按数字排序
+	//函数去掉名字后叫匿名函数，不可复用。
+	console.log(arr)
+	//[54, 23, 15, 12, 11, 8, 6, 5, 3, 3]
+	
+	//4.Math
+	console.log(Math.PI)
+	console.log(Math.round(Math.PI))
+	
+	//5.Date
+	//创建日期
+	var d1 = new Date();
+	console.log(d1)
+	var d2 = new Date("2016/06/06 12:12:12")
+	console.log(d2)
+	//转换为本地日期字符串
+	console.log(d1.toLocaleDateString())
+	console.log(d1.toLocaleTimeString())
+	//如何读写时间分量
+	console.log(d1.getFullYear())
+	console.log(d1.getMonth())//月份从零开始。一月 是 0  7 是八月
+	console.log(d1.getDay())//星期
+	console.log(d1.getDate())//日期
+</script>
+</head>
+<body>
+
+</body>
+</html>

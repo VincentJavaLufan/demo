@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <!--要想在userService层中能够引用到userDao，就必须先创建userDao对象-->
+    <!-- 
+    <bean id="userDao" class="com.sf.spring.dao.UserDao"/>
+     -->
+    <!--创建userService对象-->
+    <!-- 
+    <bean id="userService" class="com.sf.spring.service.UserService">
+        <constructor-arg index="0" name="userDao" type="UserDao" ref="userDao"/>
+        
+        <property name="userDao" ref="userDao"/>
+        
+        <property name="userDao">
+         	<bean id="userDao" class="com.sf.spring.dao.UserDao"/>
+         </property>
+    </bean>
+     -->
+    
+    
+    <!-- 测试自动装配 -->
+    <!--
+        1.通过名字来自动装配autowire="byName"	通过类型来自动装配autowire="byType"
+        2.发现userService中有个叫userDao的属性
+        3.看看IOC容器中没有叫userDao的对象
+        4.如果有，就装配进去
+    -->
+    <!-- 
+    <bean id="userDao"  class="com.sf.spring.dao.UserDao"/>
+    <bean id="userService"  class="com.sf.spring.service.UserService" autowire="byType"/>
+     -->
+     
+     
+    <!-- 使用注解来实现自动装配 -->
+    <bean id="userDao"  class="com.sf.spring.dao.UserDao"/>
+    
+ </beans>
