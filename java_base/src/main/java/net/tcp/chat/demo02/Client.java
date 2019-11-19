@@ -14,6 +14,7 @@ public class Client {
 		Socket client = new Socket("localhost",9999);
 		new Thread(new Send(client)).start();
 		new Thread(new Receive(client)).start();
+		
 //		DataInputStream dis = new DataInputStream(client.getInputStream());
 //		while(true) {
 //
