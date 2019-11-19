@@ -4,11 +4,6 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 
-/**
- * ��װ�˿ڣ���InetAddress������+�˿�
- * @author FANFANER
- *
- */
 public class InetSocketDemo01 {
 	public static void main(String[] args) throws UnknownHostException {
 		InetSocketAddress address= new InetSocketAddress("127.0.0.1",9999);
