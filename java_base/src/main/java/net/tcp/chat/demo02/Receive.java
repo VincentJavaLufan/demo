@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class Receive implements Runnable{
-	private DataInputStream dis;//������
-	private boolean isRunning = true;//�̱߳�ʶ
+	private DataInputStream dis;
+	private boolean isRunning = true;
 	public Receive() {
 		
 	}
@@ -19,7 +19,7 @@ public class Receive implements Runnable{
 			CloseUtil.closeAll(dis);
 		}
 	}
-	public String receive() {//�������ݵķ���
+	public String receive() {
 		String msg = "";
 		try {
 			msg = dis.readUTF();
@@ -31,7 +31,7 @@ public class Receive implements Runnable{
 		return msg;
 	}
 	@Override
-	public void run() {//�߳���
+	public void run() {
 		while(isRunning) {
 			System.out.println(receive());
 		}
