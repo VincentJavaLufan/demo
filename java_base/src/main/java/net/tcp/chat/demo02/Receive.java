@@ -4,11 +4,6 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-/**
- * �����߳�
- * @author FANFANER
- *
- */
 public class Receive implements Runnable{
 	private DataInputStream dis;//������
 	private boolean isRunning = true;//�̱߳�ʶ
