@@ -7,14 +7,14 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 public class Send implements Runnable{
-	private BufferedReader console;//����̨������
-	private DataOutputStream dos;//�ܵ������
-	private boolean isRunning = true;//�����߳�
+	private BufferedReader console;
+	private DataOutputStream dos;
+	private boolean isRunning = true;
 	
-	public Send() {//��ʼ��console
+	public Send() {
 		console = new BufferedReader(new InputStreamReader(System.in));
 	}
-	public Send(Socket client) {//���ι���������ʼ����
+	public Send(Socket client) {
 		this();
 		try {
 			dos = new DataOutputStream(client.getOutputStream());
@@ -23,7 +23,7 @@ public class Send implements Runnable{
 			CloseUtil.closeAll(dos,console);
 		}
 	}
-	private String getMsgFromConsole() {//1.�ӿ���̨��������
+	private String getMsgFromConsole() {
 		try {
 			return console.readLine();
 		} catch (IOException e) {
@@ -31,11 +31,7 @@ public class Send implements Runnable{
 		}
 		return "";
 	}
-	/*
-	 * 1.�ӿ���̨��������
-	 * 2.��������
-	 */
-	public void send() {//��������Ϣ
+	public void send() {
 		String msg = getMsgFromConsole();
 		if(null != msg && !msg.equals("")) {
 			try {
@@ -51,7 +47,6 @@ public class Send implements Runnable{
 	
 	@Override
 	public void run() {
-		//�߳���
 		while(isRunning) {
 			send();
 		}
