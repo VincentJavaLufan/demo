@@ -4,9 +4,10 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd" >
         
-	<bean id="moocApplicationContext" class="com.imooc.aware.MoocApplicationContext" ></bean> 
+	<bean id="moocApplicationContext" class="com.imooc.aware.MoocApplicationContext" ></bean>
+	
+	<bean id="moocApplicationContext11" class="com.imooc.aware.MoocApplicationContext11" ></bean>
 
 	<bean id="moocBeanName" class="com.imooc.aware.MoocBeanName" ></bean>
-
         
  </beans>

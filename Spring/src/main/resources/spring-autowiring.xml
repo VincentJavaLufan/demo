@@ -6,7 +6,7 @@
         default-autowire="constructor">
         
         <bean id="autoWiringService" class="com.imooc.autowiring.AutoWiringService" ></bean>
- 
-        <bean id="autoWritingDAO" class="com.imooc.autowiring.AutoWiringDAO"></bean>
+        
+        <bean id="autoWiringDAO" class="com.imooc.autowiring.AutoWiringDAO"></bean>
     
  </beans>
