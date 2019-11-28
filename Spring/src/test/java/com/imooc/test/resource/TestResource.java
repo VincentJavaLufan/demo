@@ -18,7 +18,7 @@ public class TestResource extends UnitTestBase {
 	
 	@Test
 	public void testResource() {
-		MoocResource resource = super.getBean("moocResource");
+		MoocResource resource =  super.getBean("moocResource");
 		try {
 			resource.resource();
 		} catch (IOException e) {

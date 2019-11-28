@@ -3,6 +3,7 @@ package com.imooc.test.beanannotation;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
+import org.springframework.stereotype.Component;
 
 import com.imooc.beanannotation.BeanAnnotation;
 import com.imooc.test.base.UnitTestBase;
@@ -16,11 +17,10 @@ public class TestBeanAnnotation extends UnitTestBase {
 	
 	@Test
 	public void testSay() {
-		BeanAnnotation bean = super.getBean("beanAnnotation");//如果没有定义bean的id 则系统自动起名  @Component
-		bean.say("This is test.");
-		
+		BeanAnnotation bean = super.getBean("beanAnnotation");//如果没有定义bean的id 则系统自动起名
+//		BeanAnnotation bean = new BeanAnnotation();
 //		BeanAnnotation bean = super.getBean("bean");//自定义bean的id   @Component("bean")
-//		bean.say("This is test.");
+		bean.say("This is test.");
 	}
 	
 	@Test

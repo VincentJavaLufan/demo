@@ -12,6 +12,7 @@ public class TestInjection extends UnitTestBase {
 	
 	public TestInjection() {
 		super("classpath:spring-injection.xml");
+		
 	}
 	
 	@Test
