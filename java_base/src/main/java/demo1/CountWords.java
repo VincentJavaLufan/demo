@@ -4,9 +4,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 
-public class test08 {
+public class CountWords {
 	public static void main(String[] args) throws IOException {
-		System.out.println(countWords("c:/Users/Administrator/Desktop/","aa.txt"));
+		System.out.println(countWords("c:/Users/Administrator/Desktop/","password.txt"));
 	}
 	public static int countWords(String file,String find) throws IOException {
 		int count = 0;

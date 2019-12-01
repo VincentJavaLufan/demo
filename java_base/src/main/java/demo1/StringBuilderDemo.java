@@ -2,7 +2,7 @@ package demo1;
 
 import java.util.Arrays;
 
-public class test09 {
+public class StringBuilderDemo {
 	public static void main(String[] args) {
 		String str = "as89fd5asdf78f41bb11n342";
 		System.out.println(str);

@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class test01 {  
+/**
+ * string buffer
+ * @author Administrator
+ *
+ */
+public class StringBuilderBuffer {  
     public static String BASEINFO = "Mr.Y";  
     public static final int COUNT = 2000000;  
  

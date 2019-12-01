@@ -1,10 +1,13 @@
 package demo1;
-/**
- * 传唤成回文
- */
+
 import java.util.Scanner;
 
-public class test06 {
+/**
+ * 传唤成回文
+ * @author Administrator
+ *
+ */
+public class ReverseString {
 	public static void main(String[] args) {
 		System.out.println("please input a string");
 		Scanner scan = new Scanner(System.in);

@@ -2,7 +2,7 @@ package demo1;
 
 import java.io.File;
 
-public class test05 {
+public class FileDemo {
 	public static void main(String[] args) {
 		
 		File file = new File("C:\\Users\\Administrator\\Desktop");

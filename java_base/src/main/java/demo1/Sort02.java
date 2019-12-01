@@ -5,7 +5,7 @@ import java.util.Random;
  * ��һ�����飬������100������ÿ������1-1000���������
  * ���������������������ȣ�дһ���㷨�������ҳ���
  */
-public class test03 {
+public class Sort02 {
 	public static void main(String[] args) {
 		int [] arr = new int[100];
 		for(int i=0;i<arr.length;i++) {

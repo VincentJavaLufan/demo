@@ -4,7 +4,7 @@ package demo1;
  * @author FANFANER
  *
  */
-public class test04 {
+public class MultiThread {
 	public static void main(String[] args) {
 		Testthread1 tr1 = new Testthread1();
 		tr1.start();
