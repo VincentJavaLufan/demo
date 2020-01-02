@@ -3,19 +3,19 @@
 <mapper namespace="com.pwc.dao.mapper.UserMapper">
     
     <select id="findByAge" parameterType="int" resultType="com.pwc.pojo.User">
-        SELECT * FROM user WHERE age=#{age}
+        SELECT * FROM USER_MYBATIS_T WHERE age=#{age}
     </select>
     
     <select id="findById" parameterType="int" resultType="com.pwc.pojo.User">
-        SELECT * FROM user WHERE id = #{id}
+        SELECT * FROM USER_MYBATIS_T WHERE id = #{id}
     </select>
  
     <insert id="insert" parameterType="com.pwc.pojo.User">
-        INSERT INTO user(name,age) VALUES(#{name},#{age})
+        INSERT INTO USER_MYBATIS_T(name,age) VALUES(#{name},#{age})
     </insert>
  
     <delete id="deleteById" parameterType="int">
-        DELETE * FROM user WHERE id=#{id}
+        DELETE * FROM USER_MYBATIS_T WHERE id=#{id}
  
     </delete>
  

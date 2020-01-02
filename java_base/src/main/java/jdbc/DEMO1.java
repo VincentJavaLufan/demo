@@ -5,22 +5,21 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 
 public class DEMO1 {
 	public static void main( String[] args ){
         Connection connection = null;
         Statement statement = null;
         ResultSet resultSet = null;
-        String driver = "oracle.jdbc.driver.OracleDriver";
-        String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
-        String user = "lufan";
-        String password = "5555";
-
-//        String driver = "com.mysql.jdbc.Driver";
-//        String url = "jdbc:mysql://192.168.108.128:3306/demo";
-//        String user = "root";
+//        String driver = "oracle.jdbc.driver.OracleDriver";
+//        String url = "jdbc:oracle:thin:@192.168.108.128:1521:ORCL";
+//        String user = "lufan";
 //        String password = "5555";
+
+        String driver = "com.mysql.cj.jdbc.Driver";
+        String url = "jdbc:mysql://192.168.108.128:3306/demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
+        String user = "root";
+        String password = "555555";
         
         try {
             Class.forName(driver);//这样写的好处是：驱动只会加载一次，不需要依赖具体的驱动，灵活性高

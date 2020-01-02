@@ -8,7 +8,7 @@
 		select * from emp where ename = #{ename}
     </select>
     <delete id="deleteByEname" parameterType="String">
-    	delete from emp where ename = #{ename};
+    	delete from emp where ename = #{ename}
     </delete>
 
      

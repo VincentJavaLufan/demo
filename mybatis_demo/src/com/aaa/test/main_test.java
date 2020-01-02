@@ -14,7 +14,7 @@ import com.aaa.mybatis.inter.IUserOperation;
 
 public class main_test {
 
-	static String resource = "E:/workspace/mybatis_demo/src/Config.xml";
+	static String resource = "C:\\Users\\Administrator\\git\\demo\\mybatis_demo\\src\\Config.xml";
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		selectByUsername();
@@ -26,14 +26,13 @@ public class main_test {
 			SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 			SqlSession sqlSession = sessionFactory.openSession();
 			IUserOperation userOperation= sqlSession.getMapper(IUserOperation.class);
-			
 			Emp emp = userOperation.selectEmpnoByEname("JAMES");
 			System.out.println("deptno:" + emp.getDeptno());
 			System.out.println("empno:" + emp.getEmpno());
 			System.out.println("sal:" + emp.getSal());
 			
-			Boolean flag = userOperation.deleteByEname("KING");
-			System.out.println(flag);
+//			Boolean flag = userOperation.deleteByEname("KING");
+//			System.out.println(flag);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

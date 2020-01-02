@@ -8,8 +8,6 @@ public interface IUserOperation {
 	
 	public void insert(Emp user);
 	
-	public void update(Emp user);
-	
 	public boolean deleteByEname(String ename);
 
 }

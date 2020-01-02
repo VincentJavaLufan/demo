@@ -1,7 +1,10 @@
 package com.aaa.test;
  
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
- 
+
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -10,12 +13,12 @@ import org.junit.Test;
 import com.aaa.mybatis.Emp;
 import com.aaa.mybatis.inter.IUserOperation;
  
-class test {
+public class test {
 	
 	@Test
-	void testSELECT() {
-		String resource = "/Config.xml";
-		InputStream inputStream = this.getClass().getResourceAsStream(resource);
+	public void testSELECT() throws FileNotFoundException {
+		String resource = "C:\\Users\\Administrator\\git\\demo\\mybatis_demo\\src\\Config.xml";
+		InputStream inputStream = new FileInputStream(new File(resource));
 		SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 		SqlSession sqlSession = sessionFactory.openSession(); 
 		
