@@ -1,11 +1,9 @@
 package array;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Map;
 
-public class list {
+public class ListDemo {
 	public static void main(String[] args) {
 		LinkedList<Integer> numIntegers = new LinkedList<Integer>();
 		numIntegers.add(1);

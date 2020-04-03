@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
-
-public class map {
+public class MapDemo {
 	public static void main(String[] args) {
 //		Map<String, String> map = new HashMap<>();
 //		map.put("1", "aaaaa");
