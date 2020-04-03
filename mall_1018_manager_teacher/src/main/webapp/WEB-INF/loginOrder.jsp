@@ -20,7 +20,7 @@
 <title>硅谷商城</title>
 </head>
 <body>
-			<div class="up">
+		<div class="up">
 			<img src="images/logo.jpg" height="45px;" class="hy_img"/>
 			<div class="hy">
 				欢迎登录

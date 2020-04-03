@@ -3,12 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd" 
-        default-init-method="defaultInit" default-destroy-method="defaultDestroy">
-        
-        <!-- 
+         default-init-method="defaultInit" default-destroy-method="defaultDestroy">
+         
         <bean id="beanLifeCycle" class="com.imooc.lifecycle.BeanLifeCycle"  init-method="start" destroy-method="stop"></bean>
-         -->
-        
-        <bean id="beanLifeCycle" class="com.imooc.lifecycle.BeanLifeCycle" ></bean>
 	
+        <!-- 
+        <bean id="beanLifeCycle" class="com.imooc.lifecycle.BeanLifeCycle" ></bean>
+         -->
  </beans>

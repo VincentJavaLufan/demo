@@ -8,18 +8,18 @@ import com.imooc.beanannotation.injection.dao.InjectionDAO;
 @Service
 public class InjectionServiceImpl implements InjectionService {
 	
-//	@Autowired
+	@Autowired//用于成员变量
 	private InjectionDAO injectionDAO;
 	
-//	@Autowired//构造器注入
-//	public InjectionServiceImpl(InjectionDAO injectionDAO) {
-//		this.injectionDAO = injectionDAO;
-//	}
-	
-	@Autowired//setter，getter方法
-	public void setInjectionDAO(InjectionDAO injectionDAO) {
+	@Autowired//构造器注入
+	public InjectionServiceImpl(InjectionDAO injectionDAO) {
 		this.injectionDAO = injectionDAO;
 	}
+	
+	@Autowired//setter，getter方法
+//	public void setInjectionDAO(InjectionDAO injectionDAO) {
+//		this.injectionDAO = injectionDAO;
+//	}
 
 	public void save(String arg) {
 		//模拟业务操作

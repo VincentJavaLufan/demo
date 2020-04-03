@@ -13,13 +13,13 @@ public class MoocBeanName implements BeanNameAware, ApplicationContextAware {
 	@Override
 	public void setBeanName(String name) {
 		this.beanName = name;
-		System.out.println("MoocBeanName : " + name);
+		System.out.println("MoocBeanName.setBeanName:" + name);
 	}
 
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext)
 			throws BeansException {
-		System.out.println("setApplicationContext : " + applicationContext.getBean(this.beanName).hashCode());
+		System.out.println("MoocBeanName.setApplicationContext:" + applicationContext.getBean(this.beanName).hashCode());
 	}
 
 }

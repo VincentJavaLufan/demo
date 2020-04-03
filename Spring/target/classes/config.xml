@@ -6,12 +6,12 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd" >
+    <!-- 
     <context:property-placeholder location="classpath:/config.properties"/>
-<!-- 
     
 	<bean id="random" class="com.wechat.test.StaticFactoryBean" factory-method="createRandom" scope="singleton"/>
 	
 	<bean id="testDog" class="com.wechat.test.dog" factory-method="speak"/>
- -->
+     -->
     
 </beans>

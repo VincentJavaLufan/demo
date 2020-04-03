@@ -21,6 +21,7 @@ public class TestBeanScope extends UnitTestBase {
 		//验证是否是单例的 singletion   两次输出的hashcode是一样的
 		BeanScope beanScope2 = super.getBean("beanScope");
 		beanScope2.say();
+		testSay2();
 	}
 	/**
 	 * 两个test是在两个容器里面的

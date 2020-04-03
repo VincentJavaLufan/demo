@@ -9,27 +9,27 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 
 @Configuration
-@ImportResource("classpath:config.xml")
+//@ImportResource("classpath:config.xml")
 public class StoreConfig {
 	
-	@Value("${url}")
-	private String url;
-	
-	@Value("${jdbc.username}")//如果名字起个username 会造成误解 取到当前系统的用户名
-	private String username;
-	
-	@Value("${password}")
-	private String password;
-	
-	@Bean
-	public MyDriverManager myDriverManager() {
-		return new MyDriverManager(url, username, password);
-	}
-	
-//	@Bean(name = "stringStore", initMethod="init", destroyMethod="destroy")
-//	public Store stringStore() {
-//		return new StringStore();
+//	@Value("${url}")
+//	private String url;
+//	
+//	@Value("${jdbc.username}")//如果名字起个username 会造成误解 取到当前系统的用户名
+//	private String username;
+//	
+//	@Value("${password}")
+//	private String password;
+//	
+//	@Bean
+//	public MyDriverManager myDriverManager() {
+//		return new MyDriverManager(url, username, password);
 //	}
+	
+	@Bean(name = "stringStore", initMethod="StringStoreInit", destroyMethod="StringStoreDestroy")
+	public Store stringStore() {
+		return new StringStore();
+	}
 	
 	
 //	@Bean(name = "stringStore")
@@ -37,11 +37,13 @@ public class StoreConfig {
 //	public Store stringStore() {
 //		return new StringStore();
 //	}
-//	
+	
 //	@Autowired
 //	private Store<String> s1;
+	
 //	@Autowired
 //	private Store<Integer> s2;
+	
 //	@Bean
 //	public StringStore stringStore() {
 //		return new StringStore();
@@ -51,14 +53,14 @@ public class StoreConfig {
 //	public IntegerStore integerStore() {
 //		return new IntegerStore();
 //	}
-//	
+	
 //	@Bean(name = "stringStoreTest")
 //	public Store stringStoreTest() {
 //		System.out.println("s1 : " + s1.getClass().getName());
 //		System.out.println("s2 : " + s2.getClass().getName());
 //		return new StringStore();
 //	}
-//	
+	
 //	@Bean
 //	public Store getStringStore() {
 //		return new StringStore();
