@@ -1,6 +1,0 @@
-#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Mon Oct 15 18:10:36 CST 2018
-@default-internal-3rdparty-http\://144.131.254.48\:6080/nexus/content/repositories/thirdparty/.lastUpdated=1539598235518
-https\://repo.maven.apache.org/maven2/.lastUpdated=1539598236700
-http\://144.131.254.48\:6080/nexus/content/repositories/thirdparty/.error=Could not transfer artifact com.oracle\:ojdbc7\:pom\:11.2.0.2.0 from/to internal-3rdparty (http\://144.131.254.48\:6080/nexus/content/repositories/thirdparty/)\: connect timed out
-https\://repo.maven.apache.org/maven2/.error=
