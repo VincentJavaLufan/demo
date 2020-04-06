@@ -1,11 +1,11 @@
-package json.demo;
+package io.file_01;
 
 import java.io.File;
  
-public class GetFileName{
+public class RenamePhotosDemo{
     
     public static void main(String[] args){
-    	renamePhotos("F:\\QQMusicCache\\cache\\plguin\\photos\\" , "美女", ".jpg");
+    	renamePhotos("F:\\QQMusicCache\\photos\\" , "美女-", ".jpg");
 //    	renamePhotos("F:\\QQMusicCache\\cache\\plguin\\videos\\" , "二女" ,".mp4");
     }
     
