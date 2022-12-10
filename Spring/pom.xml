@@ -16,7 +16,7 @@
     </plugins>
   </build>
   <properties>
-  	<springframework.version>5.0.8.RELEASE</springframework.version>
+  	<springframework.version>6.0.0</springframework.version>
   </properties>
   <dependencies>
   	<dependency>
